@@ -1,4 +1,4 @@
-import InOrderTraversal from "./InorderTraversal.js";
+import TreeTraversal from "./Traversal.js";
 import TreeNode from "./makeTree.js";
 
 const Tree = new TreeNode(20);
@@ -11,5 +11,16 @@ RightAddedNode.addRightNode(14);
 
 leftAddedNode.addLeftNode(90);
 leftAddedNode.addRightNode(32);
+console.group("Inorder");
+TreeTraversal.inOrder(Tree);
+console.groupEnd();
 
-InOrderTraversal.print(Tree)
+console.group("Preorder");
+TreeTraversal.preOrder(Tree);
+console.groupEnd();
+
+
+
+console.group("postOrder");
+TreeTraversal.postOrder(Tree);
+console.groupEnd();
