@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon recursion/index.js"
+    "dev": "nodemon striversSheet/twosumproblem.js",
+    "dev-ts": "nodemon --watch . --ext ts --exec tsx striversSheet/ThreeSumProblem.ts"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,10 @@
   },
   "homepage": "https://github.com/shakambhar6562/dsa-Practice#readme",
   "dependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
   }
 }
